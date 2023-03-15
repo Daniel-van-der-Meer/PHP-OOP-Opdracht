@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholen lijst</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    
+    <!-- Header -->
+    <header class="p-3 mb-3 border-bottom bg-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none px-4">
+              <span class="fs-4">Scholen overzicht</span>
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <button type="button" id="showModal" class="btn btn-primary">Toevoegen</button>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Modal for adding a new school -->
+      <div class="modal" id="schoolModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">School toevoegen</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- form start -->
+              <form action="" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">School naam</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <label for="typeSchool" class="form-label">Soort school</label>
+                      <input type="text" class="form-control" id="typeSchool">
+                    </div>
+                    <div class="col">
+                      <label for="region" class="form-label">Regio</label>
+                      <input type="text" class="form-control" id="region">
+                    </div>
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
+              <button type="button" class="btn btn-primary">Toevoegen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Table here, only have to display data at this point -->
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Naam</th>
+                <th scope="col">Soort school</th>
+                <th scope="col">Regio</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>ROC Friese Poort</td>
+                  <td>MBO</td>
+                  <td>Friesland</td>
+                </tr>
+            </tbody>
+    </div>
+
+      
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</html>
