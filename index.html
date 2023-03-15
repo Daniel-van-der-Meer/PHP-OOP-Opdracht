@@ -45,21 +45,34 @@
                     </div>
                     <div class="col">
                       <label for="region" class="form-label">Regio</label>
-                      <input type="text" class="form-control" id="region">
+                      <select class="form-select" id="region">
+                        <option value="Friesland" selected>Friesland</option>
+                        <option value="Groningen">Groningen</option>
+                        <option value="Drenthe">Drenthe</option>
+                        <option value="Overijssel">Overijssel</option>
+                        <option value="Flevoland">Flevoland</option>
+                        <option value="Gelderland">Gelderland</option>
+                        <option value="Utrecht">Utrecht</option>
+                        <option value="Noord-Holland">Noord-Holland</option>
+                        <option value="Zuid-Holland">Zuid-Holland</option>
+                        <option value="Zeeland">Zeeland</option>
+                        <option value="Noord-Brabant">Noord-Brabant</option>
+                        <option value="Limburg">Limburg</option>
+                      </select>
                     </div>
                   </div>
-              </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
               <button type="button" class="btn btn-primary">Toevoegen</button>
+            </form>
             </div>
           </div>
         </div>
       </div>
 
     <!-- Table here, only have to display data at this point -->
-    <div class="container">
+    <div class="container" >
         <table class="table table-hover">
             <thead>
               <tr>
@@ -77,6 +90,22 @@
                   <td>Friesland</td>
                 </tr>
             </tbody>
+        </table>
+        <!-- End table -->
+
+        <nav>
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+        </nav>
     </div>
 
       
