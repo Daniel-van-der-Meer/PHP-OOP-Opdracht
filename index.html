@@ -8,129 +8,129 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body class="bg-light">
-    
-    <!-- Header -->
-    <header class="p-3 mb-3 border-bottom bg-white">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+<!-- Header -->
+<header class="p-3 mb-3 border-bottom bg-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none px-4">
-              <span class="fs-4">Scholen overzicht</span>
+                <span class="fs-4">Scholen overzicht</span>
             </a>
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <button type="button" id="showModal" class="btn btn-primary">Toevoegen</button>
             </ul>
-          </div>
         </div>
-      </header>
+    </div>
+</header>
 
-      <!-- Modal for adding a new school -->
-      <div class="modal fade" id="schoolModal" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
+<!-- Modal for adding a new school -->
+<div class="modal fade" id="schoolModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">School toevoegen</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title">School toevoegen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <!-- form start -->
-              <form action="" method="post">
-                <div class="mb-3">
-                    <label for="name" class="form-label">School naam</label>
-                    <input type="text" class="form-control" id="name">
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <label for="typeSchool" class="form-label">Soort school</label>
-                      <input type="text" class="form-control" id="typeSchool">
+                <!-- form start -->
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">School naam</label>
+                        <input type="text" class="form-control" id="name">
                     </div>
-                    <div class="col">
-                      <label for="region" class="form-label">Regio</label>
-                      <select class="form-select" id="region">
-                        <option value="Friesland" selected>Friesland</option>
-                        <option value="Groningen">Groningen</option>
-                        <option value="Drenthe">Drenthe</option>
-                        <option value="Overijssel">Overijssel</option>
-                        <option value="Flevoland">Flevoland</option>
-                        <option value="Gelderland">Gelderland</option>
-                        <option value="Utrecht">Utrecht</option>
-                        <option value="Noord-Holland">Noord-Holland</option>
-                        <option value="Zuid-Holland">Zuid-Holland</option>
-                        <option value="Zeeland">Zeeland</option>
-                        <option value="Noord-Brabant">Noord-Brabant</option>
-                        <option value="Limburg">Limburg</option>
-                      </select>
+                    <div class="row">
+                        <div class="col">
+                            <label for="typeSchool" class="form-label">Soort school</label>
+                            <input type="text" class="form-control" id="typeSchool">
+                        </div>
+                        <div class="col">
+                            <label for="region" class="form-label">Regio</label>
+                            <select class="form-select" id="region">
+                                <option value="Friesland" selected>Friesland</option>
+                                <option value="Groningen">Groningen</option>
+                                <option value="Drenthe">Drenthe</option>
+                                <option value="Overijssel">Overijssel</option>
+                                <option value="Flevoland">Flevoland</option>
+                                <option value="Gelderland">Gelderland</option>
+                                <option value="Utrecht">Utrecht</option>
+                                <option value="Noord-Holland">Noord-Holland</option>
+                                <option value="Zuid-Holland">Zuid-Holland</option>
+                                <option value="Zeeland">Zeeland</option>
+                                <option value="Noord-Brabant">Noord-Brabant</option>
+                                <option value="Limburg">Limburg</option>
+                            </select>
+                        </div>
                     </div>
-                  </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
-              <button type="button" class="btn btn-primary">Toevoegen</button>
-            </form>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
+                <button type="button" class="btn btn-primary">Toevoegen</button>
+                </form>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
 
-    <!-- Table here, only have to display data at this point -->
-    <div class="container" >
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filters toepoassen</button>
-        <div class="dropdown-menu p-2 col-5">
-          <form action="">
-          <div class="regionCheck col-md-3">
-            <label for="Friesland">Regios</label> <br>
-              <input class="form-check-input" type="checkbox" value="Friesland" id="Friesland" checked>
-              <label class="form-check-label" for="Friesland">Checked checkbox</label>
-          </div>
+<!-- Table here, only have to display data at this point -->
+<div class="container" >
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filters toepoassen</button>
+    <div class="dropdown-menu p-2 col-5">
+        <form action="">
+            <div class="regionCheck col-md-3">
+                <label for="Friesland">Regios</label> <br>
+                <input class="form-check-input" type="checkbox" value="Friesland" id="Friesland" checked>
+                <label class="form-check-label" for="Friesland">Checked checkbox</label>
+            </div>
 
         </form>
-        </div>
-
-        <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Naam</th>
-                <th scope="col">Soort school</th>
-                <th scope="col">Regio</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>ROC Friese Poort</td>
-                  <td>MBO</td>
-                  <td>Friesland</td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- End table -->
-
-        <nav>
-            <ul class="pagination justify-content-end">
-              <li class="page-item">
-                <a class="page-link">Previous</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-              </li>
-            </ul>
-        </nav>
     </div>
 
-    <footer class="p-3 mb-3 border-top bg-white fixed-bottom">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Naam</th>
+            <th scope="col">Soort school</th>
+            <th scope="col">Regio</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>ROC Friese Poort</td>
+            <td>MBO</td>
+            <td>Friesland</td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- End table -->
+
+    <nav>
+        <ul class="pagination justify-content-end">
+            <li class="page-item">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<footer class="p-3 mb-3 border-top bg-white fixed-bottom">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none px-4">
-              <span class="fs-8">Opdracht door Bas, Stijn en Daniël. </span>
+                <span class="fs-8">Opdracht door Bas, Stijn en Daniël. </span>
             </a>
 
-          </div>
         </div>
-    </footer>
-      
+    </div>
+</footer>
+
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
